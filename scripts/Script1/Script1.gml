@@ -9,8 +9,10 @@ function draw_drop_sprite(){
 	int_current_sprite = instance_id_get(global.var_drops_created); //save instance ID to variable
 	
 	//tests for setting speed and direction of the sprite
-	speed = 4*(global.var_drops_created+1);
-	direction=100*(global.var_drops_created+1);
+	/*Speed and direction will be set according to the number of drops already created which will be 
+	zero for the first room */
+	speed = 4*(global.var_drops_created); 
+	direction=100*(global.var_drops_created);
 	
 			
 			
